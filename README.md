@@ -1,13 +1,30 @@
-### 🌐 Custom Web Search Tool – Assignment 7
+## 🌐 Custom Web Search Tool – Assignment 7
 
-A simple AI Agent built using OpenAI Agents SDK and Gemini API that can answer user queries with the help of a custom web search tool.
+It is a Python-based AI Agent that integrates with Google Gemini API and Tavily Web Search API to answer user queries in real-time.
 
 ## 🚀 Features
- - Uses Google Gemini (via OpenAI-style API) as the LLM
- - Integrated Custom Web Search Tool (Tavily API / Mock)
- - Interactive Command-Line Interface (CLI)
- - Handles general knowledge and fact-based queries
- - Exit anytime with exit to quit
+ - 🤖 LLM-powered Agent using Google Gemini (via OpenAI-style SDK)
+ - 🔍 Custom Web Search Tool (Tavily API) for real-time knowledge
+ - 🖥️ Command-Line Interface (CLI) for interactive queries
+ - 🛠️ Built using OpenAI Agents SDK
+ - ⚡ Async architecture for smooth performance
+
+## 📂 Project Structure
+```bash
+Custom-Web-Search-Tool-assignment-7/
+│── main.py          # Entry point: runs the interactive CLI
+│── tools.py         # Tavily web search tool function
+│── tavily_api.py    # Handles API calls to Tavily
+│── agents.py        # Agent + Runner setup
+│── .env             # Environment variables (API keys)
+```
+## Setup Environment Variables
+Create a .env file in the root folder:
+
+```ini
+GEMINI_API_KEY=your_gemini_api_key_here
+TAVILY_API_KEY=your_tavily_api_key_here
+```
 
 ## ▶️ Usage
 Run the agent with:
@@ -21,3 +38,4 @@ You’ll see:
 🔎 Ask me anything: Who is the current Prime Minister of Pakistan?
 🤖 Agent: The current Prime Minister of Pakistan is ...
 ```
+
